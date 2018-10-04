@@ -14,16 +14,15 @@ public class array {
 
         int marks[] = {72,85,93,29,85};
 
-        int sum = 0;
+        // Gennemløb af array med for loop
         for(int counter = 0; counter < marks.length; counter++){
-            System.out.println(marks[counter]);
-            sum = sum + marks[counter];
-
-
+            System.out.println("Nummer " + counter + " er " + marks[counter]);
         }
 
-        System.out.println("sum of all 5 marks " + sum);
-
+        // Gennemløb af array uden for loop
+        for (int nummer : marks) {
+            System.out.println("Foreach :" + nummer);
+        }
 
     }
 }
